@@ -1,0 +1,221 @@
+CREATE DATABASE  IF NOT EXISTS `studentsmanagementsystem` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `studentsmanagementsystem`;
+-- MySQL dump 10.13  Distrib 8.0.21, for Win64 (x86_64)
+--
+-- Host: localhost    Database: studentsmanagementsystem
+-- ------------------------------------------------------
+-- Server version	8.0.21
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `attendence`
+--
+
+DROP TABLE IF EXISTS `attendence`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `attendence` (
+  `CLASS_NAME` varchar(25) DEFAULT NULL,
+  `FIRST_NAME` varchar(254) DEFAULT NULL,
+  `LAST_NAME` varchar(254) DEFAULT NULL,
+  `ROLL_NUMBER` char(2) DEFAULT NULL,
+  `_DATE_` date DEFAULT NULL,
+  `ABSENT_PRESEN_PorA` char(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `attendence`
+--
+
+LOCK TABLES `attendence` WRITE;
+/*!40000 ALTER TABLE `attendence` DISABLE KEYS */;
+INSERT INTO `attendence` VALUES ('12-A','SARTHAK','CHAWLA','1','2020-01-01','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-02','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-03','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-06','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-07','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-08','A'),('12-A','SARTHAK','CHAWLA','1','2020-01-09','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-10','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-13','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-14','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-15','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-16','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-17','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-20','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-21','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-22','A'),('12-A','SARTHAK','CHAWLA','1','2020-01-23','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-24','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-27','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-28','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-29','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-30','P'),('12-A','SARTHAK','CHAWLA','1','2020-01-31','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-03','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-04','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-05','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-06','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-07','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-10','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-11','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-12','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-13','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-14','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-17','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-18','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-19','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-20','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-21','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-24','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-25','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-26','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-27','P'),('12-A','SARTHAK','CHAWLA','1','2020-02-28','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-02','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-03','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-04','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-05','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-06','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-09','A'),('12-A','SARTHAK','CHAWLA','1','2020-03-10','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-11','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-12','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-13','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-16','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-17','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-18','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-19','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-20','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-25','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-26','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-27','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-30','P'),('12-A','SARTHAK','CHAWLA','1','2020-03-31','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-01','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-02','A'),('12-A','SARTHAK','CHAWLA','1','2020-04-03','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-06','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-07','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-08','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-09','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-10','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-13','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-14','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-15','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-16','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-17','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-20','A'),('12-A','SARTHAK','CHAWLA','1','2020-04-21','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-22','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-23','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-24','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-27','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-28','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-29','P'),('12-A','SARTHAK','CHAWLA','1','2020-04-30','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-01','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-04','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-05','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-06','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-07','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-08','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-11','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-12','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-13','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-14','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-15','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-18','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-19','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-20','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-21','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-22','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-25','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-26','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-27','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-28','P'),('12-A','SARTHAK','CHAWLA','1','2020-05-29','P'),('12-A','SARTHAK','CHAWLA','1','2020-06-01','P'),('12-A','SARTHAK','CHAWLA','1','2020-06-02','P'),('12-A','SARTHAK','CHAWLA','1','2020-06-03','P'),('12-A','SARTHAK','CHAWLA','1','2020-06-04','P'),('12-A','SARTHAK','CHAWLA','1','2020-06-05','P'),('12-A','SARTHAK','CHAWLA','1','2020-06-08','P'),('12-A','SARTHAK','CHAWLA','1','2020-06-09','P'),('12-A','SARTHAK','CHAWLA','1','2020-06-10','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-01','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-02','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-03','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-06','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-07','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-08','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-09','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-10','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-13','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-14','A'),('11-A','PRIYANSHU','TOMAR','1','2020-01-15','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-16','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-17','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-20','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-21','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-22','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-23','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-24','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-27','A'),('11-A','PRIYANSHU','TOMAR','1','2020-01-28','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-29','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-30','P'),('11-A','PRIYANSHU','TOMAR','1','2020-01-31','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-03','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-04','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-05','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-06','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-07','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-10','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-11','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-12','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-13','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-14','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-17','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-18','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-19','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-20','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-21','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-24','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-25','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-26','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-27','P'),('11-A','PRIYANSHU','TOMAR','1','2020-02-28','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-02','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-03','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-04','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-05','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-06','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-09','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-10','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-11','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-12','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-13','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-16','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-17','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-18','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-19','A'),('11-A','PRIYANSHU','TOMAR','1','2020-03-20','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-25','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-26','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-27','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-30','P'),('11-A','PRIYANSHU','TOMAR','1','2020-03-31','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-01','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-02','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-03','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-06','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-07','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-08','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-09','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-10','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-13','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-14','A'),('11-A','PRIYANSHU','TOMAR','1','2020-04-15','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-16','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-17','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-20','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-21','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-22','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-23','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-24','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-27','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-28','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-29','P'),('11-A','PRIYANSHU','TOMAR','1','2020-04-30','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-01','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-04','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-05','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-06','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-07','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-08','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-11','A'),('11-A','PRIYANSHU','TOMAR','1','2020-05-12','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-13','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-14','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-15','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-18','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-19','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-20','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-21','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-22','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-25','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-26','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-27','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-28','P'),('11-A','PRIYANSHU','TOMAR','1','2020-05-29','P'),('11-A','PRIYANSHU','TOMAR','1','2020-06-01','P'),('11-A','PRIYANSHU','TOMAR','1','2020-06-02','P'),('11-A','PRIYANSHU','TOMAR','1','2020-06-03','P'),('11-A','PRIYANSHU','TOMAR','1','2020-06-04','P'),('11-A','PRIYANSHU','TOMAR','1','2020-06-05','P'),('11-A','PRIYANSHU','TOMAR','1','2020-06-08','P'),('11-A','PRIYANSHU','TOMAR','1','2020-06-09','P'),('11-A','PRIYANSHU','TOMAR','1','2020-06-10','P');
+/*!40000 ALTER TABLE `attendence` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `class`
+--
+
+DROP TABLE IF EXISTS `class`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `class` (
+  `CLASS_NAME` varchar(25) DEFAULT NULL,
+  `CLASS_TEACHER` varchar(120) DEFAULT NULL,
+  `DATESHEET` text,
+  `TIMETABLE` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `class`
+--
+
+LOCK TABLES `class` WRITE;
+/*!40000 ALTER TABLE `class` DISABLE KEYS */;
+INSERT INTO `class` VALUES ('12-A','TANIA SETHI','datesheet.jpg','timetable.jpg'),('11-A','RAKESH AHUJA','datesheet.jpg','timetable.jpg');
+/*!40000 ALTER TABLE `class` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `faculty_info`
+--
+
+DROP TABLE IF EXISTS `faculty_info`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `faculty_info` (
+  `NAME_OF_FACULTY` varchar(254) DEFAULT NULL,
+  `_SUBJECT_` varchar(254) DEFAULT NULL,
+  `_POST_of_faculty` varchar(254) DEFAULT NULL,
+  `BIRTH_DATE` date DEFAULT NULL,
+  `PHONE_NUMBER` varchar(20) DEFAULT NULL,
+  `USERNAME` text,
+  `CLASS_TEACHER_OF` varchar(10) DEFAULT NULL,
+  `TIMETABLE` text,
+  `image` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `faculty_info`
+--
+
+LOCK TABLES `faculty_info` WRITE;
+/*!40000 ALTER TABLE `faculty_info` DISABLE KEYS */;
+INSERT INTO `faculty_info` VALUES ('TANIA SETHI','MATHS','SENIOR_TEACHER','1980-09-28','9123456781','TANIA123','11-A','TeacherTimetable.jpg','teacher female.png'),('KAKASHI','PHYSICAL EDUCATION','SENIOR_TEACHER','1993-02-17','9123456782','KAKASHI23',NULL,'TeacherTimetable.jpg','teacher male.png'),('RAKESH AHUJA','PHYSICS','HOD','1973-11-02','9123456783','RAKESH123','12-A','TeacherTimetable.jpg','teacher male.png'),('RAJESH MADAAN','MATHS','HOD','1978-07-03','9123456784','RAJESH123','NULL','TeacherTimetable.jpg','teacher male.png'),('VIKRANT ARORA','CHEMISTRY','HOD','1983-04-12','9123456785','VIKRANT123','NULL','TeacherTimetable.jpg','teacher male.png');
+/*!40000 ALTER TABLE `faculty_info` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `marks`
+--
+
+DROP TABLE IF EXISTS `marks`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `marks` (
+  `username` text,
+  `FIRST_NAME` text,
+  `LAST_NAME` text,
+  `CURRENT_CLASS` text,
+  `EXAM_TERM` text,
+  `SUBJECT` text,
+  `TOTAL_MARKS` text,
+  `MARKS_OBTAINED` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `marks`
+--
+
+LOCK TABLES `marks` WRITE;
+/*!40000 ALTER TABLE `marks` DISABLE KEYS */;
+INSERT INTO `marks` VALUES ('SARTHAK123','SARTHAK','CHAWLA','12-A','HALF_YEARLY','MATHS','80','76'),('SARTHAK123','SARTHAK','CHAWLA','12-A','HALF_YEARLY','PHYSICS','80','72'),('SARTHAK123','SARTHAK','CHAWLA','12-A','HALF_YEARLY','PHYSICAL EDUCATION','80','79'),('SARTHAK123','SARTHAK','CHAWLA','12-A','HALF_YEARLY','CHEMISTRY','80','79'),('PRIYANSHU123','PRIYANSHU','TOMAR','11-A','HALF_YEARLY','MATHS','80','73'),('PRIYANSHU123','PRIYANSHU','TOMAR','11-A','HALF_YEARLY','PHYSICS','80','71'),('PRIYANSHU123','PRIYANSHU','TOMAR','11-A','HALF_YEARLY','CHEMISTRY','80','63'),('PRIYANSHU123','PRIYANSHU','TOMAR','11-A','HALF_YEARLY','PHYSICAL EDUCATION','80','79'),('SARTHAK123','SARTHAK','CHAWLA','12-A','UNIT TEST 1','MATHS','80','67'),('SARTHAK123','SARTHAK','CHAWLA','12-A','UNIT TEST 1','PHYSICS','80','74'),('SARTHAK123','SARTHAK','CHAWLA','12-A','UNIT TEST 1','PHYSICAL EDUCATION','80','77'),('SARTHAK123','SARTHAK','CHAWLA','12-A','UNIT TEST 1','CHEMISTRY','80','73'),('PRIYANSHU123','PRIYANSHU','TOMAR','11-A','UNIT TEST 1','MATHS','80','69'),('PRIYANSHU123','PRIYANSHU','TOMAR','11-A','UNIT TEST 1','PHYSICS','80','78'),('PRIYANSHU123','PRIYANSHU','TOMAR','11-A','UNIT TEST 1','PHYSICAL EDUCATION','80','76'),('PRIYANSHU123','PRIYANSHU','TOMAR','11-A','UNIT TEST 1','CHEMISTRY','80','74'),('PIYUSH123','PIYUSH','YADAV','12-A','HALF_YEARLY','MATHS','80','79'),('PIYUSH123','PIYUSH','YADAV','12-A','HALF_YEARLY','PHYSICS','80','69'),('PIYUSH123','PIYUSH','YADAV','12-A','HALF_YEARLY','PHYSICAL EDUCATION','80','74'),('PIYUSH123','PIYUSH','YADAV','12-A','HALF_YEARLY','CHEMISTRY','80','76'),('SHIVAM123','SHIVAM','KUMAR','12-A','HALF_YEARLY','MATHS','80','53'),('SHIVAM123','SHIVAM','KUMAR','12-A','HALF_YEARLY','PHYSICS','80','78'),('SHIVAM123','SHIVAM','KUMAR','12-A','HALF_YEARLY','PHYSICAL EDDUCATION','80','69'),('SHIVAM123','SHIVAM','KUMAR','12-A','HALF_YEARLY','CHEMISTRY','80','73'),('PIYUSH123','PIYUSH','YADAV','12-A','UNIT TEST 1','MATHS','80','69'),('PIYUSH123','PIYUSH','YADAV','12-A','UNIT TEST 1','PHYSICS','80','69'),('PIYUSH123','PIYUSH','YADAV','12-A','UNIT TEST 1','PHYSICAL EDUCATION','80','75'),('PIYUSH123','PIYUSH','YADAV','12-A','UNIT TEST 1','CHEMISTRY','80','77'),('SHIVAM123','SHIVAM','KUMAR','12-A','UNIT TEST 1','MATHS','80','74'),('SHIVAM123','SHIVAM','KUMAR','12-A','UNIT TEST 1','PHYSICS','80','71'),('SHIVAM123','SHIVAM','KUMAR','12-A','UNIT TEST 1','PHYSICAL EDUCATION','80','71'),('SHIVAM123','SHIVAM','KUMAR','12-A','UNIT TEST 1','CHEMISTRY','80','78'),('AKSHAY123','AKSHAY','ARORA','11-A','HALF_YEARLY','MATHS','80','69'),('AKSHAY123','AKSHAY','ARORA','11-A','HALF_YEARLY','PHYSICS','80','56'),('AKSHAY123','AKSHAY','ARORA','11-A','HALF_YEARLY','PHYSICAL EDUCATION','80','76'),('AKSHAY123','AKSHAY','ARORA','11-A','HALF_YEARLY','CHEMISTRY','80','58'),('AKSHAY123','AKSHAY','ARORA','11-A','UNIT TEST 1','MATHS','80','80'),('AKSHAY123','AKSHAY','ARORA','11-A','UNIT TEST 1','PHYSICS','80','63'),('AKSHAY123','AKSHAY','ARORA','11-A','UNIT TEST 1','PHYSICAL EDUCATION','80','79'),('AKSHAY123','AKSHAY','ARORA','11-A','UNIT TEST 1','CHEMISTRY','80','72');
+/*!40000 ALTER TABLE `marks` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `student_information`
+--
+
+DROP TABLE IF EXISTS `student_information`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `student_information` (
+  `FIRST_NAME` varchar(254) DEFAULT NULL,
+  `LAST_NAME` varchar(254) DEFAULT NULL,
+  `CURRENT_CLASS` varchar(20) DEFAULT NULL,
+  `DATE_OF_BIRTH` date DEFAULT NULL,
+  `ADMISSION_NUMBER` char(6) DEFAULT NULL,
+  `FARTHER_FULLNAME` text,
+  `MOTHER_NAME` text,
+  `PHONE_NUMBER` char(10) DEFAULT NULL,
+  `username` text,
+  `Image` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `student_information`
+--
+
+LOCK TABLES `student_information` WRITE;
+/*!40000 ALTER TABLE `student_information` DISABLE KEYS */;
+INSERT INTO `student_information` VALUES ('SARTHAK','CHAWLA','12-A','2003-08-21','123456','JITENDRA','RITU','9403710101','SARTHAK123','studentimage.png'),('NARUTO','UZUMAKI','11-A','2004-08-21','123457','minato uzumaki','KUSHINA','1111111111','naruto','naruto.jpg'),('PRIYANSHU','TOMAR','11-A','2003-09-21','123459','MANISH TOMAR','KASHISH TOMAR','9403710102','PRIYANSHU123','studentimage.png'),('PIYUSH','YADAV','12-A','2003-05-01','123460','AJAY YADAV','SAKASHI YADAV','9403710103','PIYUSH123','studentimage.png'),('SHIVAM','KUMAR','12-A','2003-04-03','123461','ANISH KUMAR','ANITA KUMAR','9403710104','SHIVAM123','studentimage.png'),('AKSHAY','ARORA','11-A','2003-12-02','123462','RAJIV ARORA','ANITA ARORA','9123456789','AKSHAY123','studentimage.png');
+/*!40000 ALTER TABLE `student_information` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `test_assignment`
+--
+
+DROP TABLE IF EXISTS `test_assignment`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `test_assignment` (
+  `CLASS_NAME` varchar(25) DEFAULT NULL,
+  `TEST_NAME` varchar(254) DEFAULT NULL,
+  `_SUBJECT` varchar(254) DEFAULT NULL,
+  `MAX_marks` varchar(3) DEFAULT NULL,
+  `Date_Of_Test` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `test_assignment`
+--
+
+LOCK TABLES `test_assignment` WRITE;
+/*!40000 ALTER TABLE `test_assignment` DISABLE KEYS */;
+INSERT INTO `test_assignment` VALUES ('12-A','UT-1','COMPUTER SCIENCE','25','2020-09-22'),('11-A','UT-1','COMPUTER SCIENCE','25','2020-09-22');
+/*!40000 ALTER TABLE `test_assignment` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user_table`
+--
+
+DROP TABLE IF EXISTS `user_table`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user_table` (
+  `username` text,
+  `passwd` text,
+  `role` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_table`
+--
+
+LOCK TABLES `user_table` WRITE;
+/*!40000 ALTER TABLE `user_table` DISABLE KEYS */;
+INSERT INTO `user_table` VALUES ('vishal','Asdf1234#','Student'),('VISHAL0','49081','Teacher'),('Divyansh','Sh!p','Admin'),('naruto','a','Student'),('SARTHAK123','1234','Student'),('naruto','1234','Student'),('BORUTO123','1234','Student'),('PRIYANSHU123','1234','Student'),('PIYUSH123','1234','Student'),('SHIVAM123','1234','Student'),('TANIA123','1234','Teacher'),('RAKESH123','1234','Teacher'),('KAKASHI123','1234','Teacher'),('RAJESH123','1234','Teacher'),('VIKRANT123','1234','Teacher'),('AKSHAY123','1234','Student');
+/*!40000 ALTER TABLE `user_table` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2020-11-09  8:27:13
