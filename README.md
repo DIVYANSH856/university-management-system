@@ -1,6 +1,9 @@
 # STUDENT-MANAGEMENT-SYSTEM
 it's a python project , created using TKINTER , PIL ,  mysql.connector, etc
 
+explained running of project here
+https://github.com/DIVYANSH856/university-managemaent-system/blob/main/output_screen_shots_runtime.pdf
+
 The University Management System is basically Python GUI software (tkinter)
 which is capable of storing, editing school student’s ,parent’s and faculty’s database.
 
